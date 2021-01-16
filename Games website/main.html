@@ -1,0 +1,103 @@
+<!DOCTYPE />
+
+<html lang="en">
+    
+
+    <head>
+
+        <title>Twenty-four</title>
+        
+        <link rel="shortcut icon" href="24-hours.png"></link>
+
+
+
+
+
+        <style>
+
+        h1{
+            display:block;
+            text-align: center;
+            font-size: 200px;
+            font-family: "Harlow solid";
+        }
+
+
+
+        .menu{
+            background-color: darkred;
+            padding: 5px;
+            height:30px;
+            display: block;
+            position: relative;
+            top: -100px;
+        }
+
+        .games{
+            color: white;
+            text-align: center;
+            font-size: large;
+            cursor: pointer;
+            padding: 4px;
+            height: 28px;
+            position: relative;
+            top: -2px;
+        }
+        .cactus-game{
+            border: 5px solid darkred;
+            height:200px;
+            background-image : url("Cactus.png") ;
+            display: block;
+            position: relative;
+            top:-100px;
+            visibility: hidden;
+            cursor: pointer;
+        }
+        a,b{
+            visibility: hidden;
+            }
+
+        .casino-game{
+            border: 5px solid darkred;
+            height:200px;
+            background-image: url("Casino.png");
+            display: block;
+            position: relative;
+            top:-100px;
+            visibility: hidden;
+            cursor: pointer;
+
+        }    
+        
+        </style>
+
+    </head>
+
+    
+    
+    
+    <body>
+
+        <h1>24</h1>
+
+        <div class="menu">
+            <div class="games" onmouseover="showCactus()" onmouseout="hideCactus()">Games</div>
+        </div>
+        <a id="a" href="second.html"><div id="cactus" class="cactus-game" onmouseover="showCactus()" onmouseout="hideCactus()" ></div></a>
+        <a id="b" href="Third.html"><div id="casino" class="casino-game" onmouseover="showCactus()" onmouseout="hideCactus()"></div></a>
+        
+
+
+
+
+
+
+
+        <script src="javascript.js"></script>
+
+    </body>
+
+
+
+
+</html>

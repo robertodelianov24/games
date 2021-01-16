@@ -1,0 +1,129 @@
+<!DOCTYPE />
+
+<html>
+
+
+<head>
+
+    <title></title>
+    <link rel="Shortcut icon" href="Casino1.png">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;    
+        }
+        h1{
+            display: block;
+            text-align: center;
+            font-size: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        #th{    
+            font-family: "Harlow solid";
+        }
+        #bank{
+            font-family: initial;
+            font-size: 30px;
+            position: absolute;
+            left: 100px;
+            top:250px;
+        }
+        #bet{
+            font-family: initial;
+            font-size: 30px;
+            position: absolute;
+            left:1600px;
+            top:250px;
+        }
+        #plus{
+            width: 30px;
+            height: 30px;
+            font-size: 25px;
+            position: absolute;
+            top:250px;
+            left: 1750px;
+        }
+        #minus{
+            width: 30px;
+            height: 30px;
+            font-size: 25px;
+            position: absolute;
+            top: 300px;
+            left: 1750px;
+        }
+        #number{
+            width: 500px;
+            height: 500px;
+            font-size: 400px;
+            text-align: center;
+            border: 5px solid black;
+            position: absolute;
+            top:250px;
+            left:705px;
+            background-color:purple;
+        }
+        #total-bet{
+            font-family: initial;
+            font-size: 30px;
+            position: absolute;
+            top:730px;
+            left:1600px;
+        }
+        #mynumber{
+            width: 100px;
+            height: 100px;
+            font-size: 90px;
+            text-align: center;
+            cursor: pointer;
+            border:5px solid darkred;
+            position: absolute;
+            top:450px;
+            left:1300px;
+            background-color: yellow;
+        }
+        #play{
+            width:104px;
+            height: 50px;
+            font-size: 40px;
+            position: absolute;
+            top: 475px;
+            left: 1500px;
+        }
+       
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <h1><span id="th">24-th</span> CASINO</h1>
+    <div id="bank">BANK:</div>
+    <div id="bet">BET</div>
+    <div id="number"></div>
+    <div id="total-bet">TOTAL</div>
+    <div id="mynumber" onclick="myNumbers()"></div>
+    <button id="plus" onclick="plus()">+</button>
+    <button id="minus" onclick="minus()">-</button>
+    <button id="play" onclick="play()">PLAY</button>
+
+
+    <script src="javascript.js"></script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

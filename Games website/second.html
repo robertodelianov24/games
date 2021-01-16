@@ -1,0 +1,142 @@
+<!DOCTYPE />
+
+<html lang="en">
+
+    <head>
+
+        <title>CACTUS</title>
+
+        <link rel="shortcut icon" href="Cactus.ico" />
+
+
+        
+
+        <style>
+            * {
+                padding:0;
+                margin:0;
+                background-color:wheat;
+
+                }
+            h1 {
+                font-family: 'Harlow Solid';
+                font-size: 100px;
+                text-align: center;   
+                }
+            #box {
+                width: 1500px;
+                height: 500px;
+                border: 7px solid darkred;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color:burlywood;
+                    }
+            #item1 {
+                width: 20px;
+                height: 100px;
+                background-color: black;
+                top: 381px;
+                position: relative; 
+                    }
+            .animate{
+                animation: jump 0.2s;
+                    }
+
+            #item2 {
+                width: 50px;
+                height: 50px;
+                background-color: darkgreen;
+                top: 331px;
+                left: 1450px;
+                position: relative;
+                animation: animaciq 1s infinite linear;
+                    }
+            @keyframes jump {
+                0% {top: 400px;}
+                10% {top: 380px;}
+                20% {top: 360px;}
+                30% {top: 340px;}
+                40% {
+                    top: 320px;
+                    }
+
+                50% {
+                    top: 300px;
+                    }
+
+                60% {
+                    top: 320px;
+                    }
+
+                70% {
+                    top: 340px;
+                    }
+                80% {
+                    top: 360px;
+                    }
+
+                90% {
+                    top: 380px;
+                    }
+                100% {
+                    top: 400px;
+                    }
+                    }
+            @keyframes animaciq {
+                0%{left:1450px;}
+                100%{left:0px;}
+                    }
+            p {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align:center;
+                position:relative;
+                top:45px;
+                font-size:20px;
+                background-color:burlywood;
+                    }
+            .ctrl{
+                background-color: wheat;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                
+            }
+            #score,#tochki,#tochki2{
+                background-color: burlywood;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+        </style>
+
+
+    </head>
+
+
+
+
+
+    <body>
+
+        <h1>Cactus</h1>
+        <p class="ctrl">CTRL + R for restart</p>
+        <div id="box" onclick="jump()">
+        <p id="tochki"><b id="tochki2">CACTUSES:  <span id="score"></span></b></p>
+        <div id="item1"></div>
+        <div id="item2"></div>
+         </div>
+
+
+
+
+
+
+            <script src="javascript.js">
+
+            </script>
+
+    </body>
+
+
+
+
+
+</html>
